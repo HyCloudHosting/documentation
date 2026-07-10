@@ -1,0 +1,16 @@
+{
+  "index": "Introduction",
+  "getting-started": "Getting Started",
+  "minecraft-servers": "Minecraft Servers",
+  "hytale-servers": "Hytale Servers",
+  "discord-bots": "Discord Bots",
+  "billing": "Billing",
+  "support": "Support",
+
+  "return": {
+    "title": "Home Page",
+    "type": "page",
+    "href": "https://hycloudhosting.com",
+    "newWindow": false
+  }
+}

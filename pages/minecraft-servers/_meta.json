@@ -1,0 +1,17 @@
+{
+    "overview": "Overview",
+    "creating-your-server": "Creating Your Server",
+    "server-management": "Server Management",
+    "file-manager": "File Manager",
+    "sftp-access": "SFTP Access",
+    "backups": "Backups",
+    "databases": "Databases",
+    "schedules": "Schedules",
+    "startup-variables": "Startup Variables",
+    "subusers": "Subusers",
+    "server-versions": "Server Versions",
+    "installing-plugins": "Installing Plugins",
+    "installing-modpacks": "Installing Modpacks",
+    "custom-domains": "Custom Domains",
+    "troubleshooting": "Troubleshooting"
+}
