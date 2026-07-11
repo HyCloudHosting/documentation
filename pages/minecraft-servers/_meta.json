@@ -3,16 +3,17 @@
     "ordering-a-minecraft-server": "Ordering a Minecraft Server",
     "accessing-the-control-panel": "Accessing the Control Panel",
     "server-management": "Server Management",
+    "console": "Console",
     "file-manager": "File Manager",
     "sftp-access": "SFTP Access",
     "backups": "Backups",
     "databases": "Databases",
     "schedules": "Schedules",
-    "startup-variables": "Startup Variables",
     "subusers": "Subusers",
     "server-versions": "Server Versions",
     "installing-plugins": "Installing Plugins",
     "installing-modpacks": "Installing Modpacks",
     "custom-domains": "Custom Domains",
+    "activity-logs": "Activity Logs",
     "troubleshooting": "Troubleshooting"
 }
