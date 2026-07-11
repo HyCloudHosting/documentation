@@ -1,6 +1,7 @@
 {
     "overview": "Overview",
-    "creating-your-server": "Creating Your Server",
+    "ordering-a-minecraft-server": "Ordering a Minecraft Server",
+    "accessing-the-control-panel": "Accessing the Control Panel",
     "server-management": "Server Management",
     "file-manager": "File Manager",
     "sftp-access": "SFTP Access",
