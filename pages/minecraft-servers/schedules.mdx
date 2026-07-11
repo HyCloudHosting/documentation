@@ -1,0 +1,240 @@
+---
+title: Schedules
+description: Learn how to automate server tasks using scheduled actions.
+---
+
+# Schedules
+
+Schedules allow you to automate repetitive tasks on your Minecraft server.
+
+Instead of manually performing the same actions every day, you can configure the control panel to execute them automatically at specific times.
+
+Schedules are useful for improving server maintenance and reducing manual administration.
+
+---
+
+## What Can Schedules Do?
+
+A schedule can automatically perform actions such as:
+
+- Restarting your server.
+- Sending messages to players.
+- Saving the world.
+- Creating backups.
+- Executing console commands.
+- Running maintenance tasks.
+
+Multiple tasks can be grouped into a single schedule.
+
+---
+
+## Creating a Schedule
+
+To create a new schedule:
+
+1. Open your Minecraft server.
+2. Navigate to **Schedules**.
+3. Click **Create Schedule**.
+4. Enter a name for the schedule.
+5. Configure the execution time.
+6. Save the schedule.
+7. Add one or more tasks.
+
+Once enabled, the schedule will run automatically according to its configuration.
+
+---
+
+## Adding Tasks
+
+Each schedule can contain multiple tasks.
+
+Tasks are executed in the order they appear.
+
+For example:
+
+1. Send a warning message.
+2. Save the world.
+3. Restart the server.
+
+This allows you to automate maintenance without interrupting players unexpectedly.
+
+---
+
+## Common Schedule Examples
+
+### Daily Restart
+
+Restart the server once every day to help maintain optimal performance.
+
+Example:
+
+- 4:00 AM
+- Save the world
+- Restart the server
+
+---
+
+### Automatic Backups
+
+Create backups automatically every day or every week.
+
+This helps protect your server against accidental data loss.
+
+---
+
+### Scheduled Announcements
+
+Automatically send chat messages such as:
+
+- Server restart warnings.
+- Maintenance notifications.
+- Community announcements.
+- Event reminders.
+
+---
+
+## Editing a Schedule
+
+Existing schedules can be modified at any time.
+
+You can change:
+
+- Name
+- Execution time
+- Enabled status
+- Assigned tasks
+
+Changes are applied immediately after saving.
+
+---
+
+## Disabling a Schedule
+
+If you no longer need a schedule, you can disable it without deleting it.
+
+Disabled schedules remain saved and can be re-enabled later.
+
+---
+
+## Deleting a Schedule
+
+Schedules that are no longer needed can be permanently removed.
+
+Deleting a schedule also removes all associated tasks.
+
+This action cannot be undone.
+
+---
+
+## Understanding the Schedule Settings
+
+When creating a schedule, you'll need to configure several fields that determine when it will run.
+
+### Name
+
+A descriptive name used to identify the schedule.
+
+Example:
+
+- Daily Restart
+- Automatic Backup
+- Nightly Maintenance
+
+---
+
+### Enabled
+
+Determines whether the schedule is active.
+
+- Enabled: The schedule will run automatically.
+- Disabled: The schedule is saved but will not run.
+
+---
+
+### Minute
+
+The minute when the schedule will execute.
+
+Examples:
+
+- `0` = At the beginning of the hour.
+- `30` = At 30 minutes past the hour.
+- `*` = Every minute.
+
+---
+
+### Hour
+
+The hour when the schedule runs.
+
+Examples:
+
+- `0` = Midnight (UTC)
+- `4` = 04:00 UTC
+- `18` = 18:00 UTC
+
+---
+
+### Day of Month
+
+Determines the day of the month.
+
+Examples:
+
+- `*` = Every day.
+- `1` = First day of every month.
+- `15` = Fifteenth day of every month.
+
+---
+
+### Month
+
+Specifies the month.
+
+Usually this is left as:
+
+`*`
+
+Meaning every month.
+
+---
+
+### Day of Week
+
+Determines the day of the week.
+
+Examples:
+
+- `*` = Every day.
+- `1` = Monday.
+- `5` = Friday.
+- `0` = Sunday.
+
+---
+
+## Best Practices
+
+We recommend:
+
+- Schedule automatic backups regularly.
+- Restart your server during low player activity.
+- Notify players before automatic restarts.
+- Review schedules periodically.
+- Keep schedule names descriptive.
+
+---
+
+## Common Mistakes
+
+Avoid the following:
+
+- Scheduling multiple restarts too close together.
+- Forgetting to notify players before restarting.
+- Running several resource-intensive tasks at the same time.
+- Creating duplicate schedules.
+
+---
+
+## Need Help?
+
+If you're unsure how to configure a schedule or automate a specific task, our support team is available through Discord and the Client Area.
