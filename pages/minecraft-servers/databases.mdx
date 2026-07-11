@@ -1,0 +1,149 @@
+---
+title: Databases
+description: Learn how to create and manage MySQL databases for your Minecraft server.
+---
+
+# Databases
+
+Some Minecraft plugins and server software require a MySQL database to store data.
+
+The Databases section of the Pterodactyl Control Panel allows you to create and manage these databases directly from your server panel.
+
+If you're only running a basic Minecraft server, you may never need a database. However, many advanced plugins depend on one.
+
+---
+
+## What Are Databases Used For?
+
+Databases are commonly used by plugins to store information such as:
+
+- Player permissions
+- Player statistics
+- Economy data
+- Punishments and bans
+- Chat history
+- Player homes and warps
+- Plugin configuration
+
+Unlike flat files, databases allow plugins to store information more efficiently and across multiple servers if required.
+
+---
+
+## Common Plugins That Use Databases
+
+Some popular plugins that support or require MySQL include:
+
+- LuckPerms
+- CoreProtect
+- LiteBans
+- AdvancedBan
+
+Each plugin has its own configuration requirements.
+
+---
+
+## Creating a Database
+
+To create a database:
+
+1. Open your Minecraft server.
+2. Navigate to **Databases**.
+3. Click **Create Database**.
+4. Enter a database name.
+5. Confirm the creation.
+
+The control panel will automatically generate the required credentials.
+
+---
+
+## Database Credentials
+
+After creating a database, you'll receive information such as:
+
+- Database Host
+- Database Port
+- Database Name
+- Username
+- Password
+
+These credentials are required when configuring plugins that use MySQL.
+
+Keep them in a safe place.
+
+---
+
+## Connecting a Plugin
+
+Most plugins provide a configuration file where you can enter your database information.
+
+Although every plugin is different, you'll typically need to provide:
+
+- Host
+- Port
+- Database Name
+- Username
+- Password
+
+After saving the configuration, restart your server.
+
+---
+
+## Managing Databases
+
+The Databases page allows you to:
+
+- View existing databases.
+- Create new databases.
+- Reset database passwords.
+- Delete databases.
+
+Database availability depends on your hosting plan.
+
+---
+
+## Deleting a Database
+
+Databases can be permanently deleted from the control panel.
+
+> **Warning**
+>
+> Deleting a database permanently removes all stored data.
+>
+> This action cannot be undone.
+
+Always verify that the database is no longer needed before deleting it.
+
+---
+
+## Best Practices
+
+We recommend:
+
+- Only create databases when required.
+- Never share your database credentials.
+- Use a separate database for each plugin whenever possible.
+- Keep a backup of important data before deleting a database.
+- Store your credentials securely.
+
+---
+
+## Common Mistakes
+
+Avoid the following:
+
+- Using incorrect credentials.
+- Editing plugin database settings while the server is running.
+- Deleting a database that is still being used by a plugin.
+- Sharing database passwords publicly.
+
+---
+
+## Need Help?
+
+If you're unsure how to configure a plugin with MySQL or you're experiencing connection issues, our support team is happy to help.
+
+When opening a support ticket, include:
+
+- The plugin you're configuring.
+- The error message (if available).
+- Your plugin configuration file (with the password removed if possible).
