@@ -10,10 +10,10 @@
     "databases": "Databases",
     "schedules": "Schedules",
     "subusers": "Subusers",
+    "activity-logs": "Activity Logs",
     "server-versions": "Server Versions",
     "installing-plugins": "Installing Plugins",
     "installing-modpacks": "Installing Modpacks",
     "custom-domains": "Custom Domains",
-    "activity-logs": "Activity Logs",
     "troubleshooting": "Troubleshooting"
 }
