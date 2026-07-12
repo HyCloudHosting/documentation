@@ -1,0 +1,168 @@
+---
+title: Custom Domains
+description: Learn how to connect your own domain or subdomain to your Minecraft server.
+---
+
+# Custom Domains
+
+Using a custom domain allows players to connect to your Minecraft server using an easy-to-remember address instead of an IP address.
+
+For example:
+
+```
+play.example.com
+```
+
+instead of:
+
+```
+ca1.hycloudhosting.com:25570
+```
+
+---
+
+## Shared IP vs Dedicated IP
+
+The way you connect a custom domain depends on whether your server uses a shared IP or a Dedicated IP.
+
+### Shared IP
+
+By default, Minecraft servers are hosted on a shared IP address.
+
+Your server will receive an address similar to:
+
+```text
+ca1.hycloudhosting.com:25570
+```
+
+Each server is assigned its own port.
+
+Since the port is required to connect, your domain must be configured using an **SRV Record**.
+
+---
+
+### Dedicated IP
+
+If your server includes a Dedicated IP, your server can usually use Minecraft's default ports.
+
+Examples:
+
+**Java Edition**
+
+```text
+play.example.com
+```
+
+(Default Port: **25565**)
+
+**Bedrock Edition**
+
+```text
+bedrock.example.com
+```
+
+(Default Port: **19132**)
+
+In most cases, players won't need to specify a port when connecting.
+
+---
+
+## Configuring a Shared IP
+
+If your server is using the default shared IP, you'll need to create two DNS records.
+
+### Step 1 — Create an A Record
+
+Create an **A Record** pointing your subdomain to your server node.
+
+Example:
+
+| Type | Name | Value |
+|------|------|-------|
+| A | play | Node IP Address |
+
+---
+
+### Step 2 — Create an SRV Record
+
+Create an SRV Record that points to your assigned server port.
+
+Example:
+
+| Field | Value |
+|--------|--------|
+| Service | `_minecraft` |
+| Protocol | `_tcp` |
+| Name | `play` |
+| Priority | `0` |
+| Weight | `5` |
+| Port | `25570` *(Example)* |
+| Target | `play.example.com` |
+
+Replace **25570** with the port assigned to your server.
+
+---
+
+## Configuring a Dedicated IP
+
+Servers with a Dedicated IP generally require only an A Record.
+
+Example:
+
+| Type | Name | Value |
+|------|------|-------|
+| A | play | Your Dedicated IP |
+
+Players can then connect directly using:
+
+```text
+play.example.com
+```
+
+without specifying a port.
+
+---
+
+## DNS Propagation
+
+After creating or modifying DNS records, changes may take time to propagate.
+
+Propagation usually completes within a few minutes but may take up to 24–48 hours depending on your DNS provider.
+
+---
+
+## Recommended DNS Providers
+
+HyCloud Hosting works with any DNS provider.
+
+Popular choices include:
+
+- Cloudflare
+- Namecheap
+- Porkbun
+- GoDaddy
+
+The configuration process is similar across most providers.
+
+---
+
+## Common Mistakes
+
+Avoid the following:
+
+- Forgetting to create the SRV Record when using a shared IP.
+- Entering the wrong server port.
+- Using an incorrect IP address.
+- Connecting before DNS propagation has completed.
+
+---
+
+## Need Help?
+
+If you're having trouble connecting your domain to your Minecraft server, our support team is available through Discord and the Client Area.
+
+When requesting assistance, please include:
+
+- Your domain name.
+- Your DNS provider.
+- Whether you're using a Shared IP or a Dedicated IP.
