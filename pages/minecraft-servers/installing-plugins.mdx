@@ -1,0 +1,134 @@
+---
+title: Installing Plugins
+description: Learn how to install, update, and remove plugins on your Minecraft server.
+---
+
+# Installing Plugins
+
+Plugins allow you to expand your Minecraft server by adding new features, commands, gameplay mechanics, and administrative tools.
+
+Whether you're building a survival server, a minigame network, or a community server, plugins are an essential part of customizing your experience.
+
+---
+
+## Before You Begin
+
+Before installing any plugin, make sure that:
+
+- Your server software supports plugins (such as Paper or Sponge).
+- The plugin is compatible with your Minecraft version.
+- You have created a recent backup.
+- You download plugins only from trusted sources.
+
+Installing incompatible plugins may prevent your server from starting correctly.
+
+---
+
+## Downloading a Plugin
+
+Download the plugin's `.jar` file from the developer's official website or another trusted source.
+
+Always verify that the plugin supports:
+
+- Your Minecraft version.
+- Your server software.
+
+---
+
+## Uploading the Plugin
+
+Plugins can be uploaded using either:
+
+- The **File Manager** in the control panel.
+- An **SFTP client**.
+
+To upload a plugin:
+
+1. Open your Minecraft server.
+2. Navigate to **Files**.
+3. Open the `plugins` folder.
+4. Upload the plugin's `.jar` file.
+5. Wait for the upload to complete.
+
+---
+
+## Restarting the Server
+
+After uploading the plugin:
+
+1. Return to the server dashboard.
+2. Restart your server.
+
+Most plugins are loaded during server startup.
+
+Once the server has started, check the console to verify that the plugin loaded successfully.
+
+---
+
+## Plugin Configuration
+
+Many plugins automatically create their own configuration folder after the first startup.
+
+Configuration files are usually located inside:
+
+```text
+/plugins/PluginName/
+```
+
+After making configuration changes, restart your server to apply them.
+
+---
+
+## Updating Plugins
+
+To update an existing plugin:
+
+1. Stop your server.
+2. Replace the old plugin `.jar` file with the new version.
+3. Start your server again.
+4. Review the console for any errors.
+
+Always read the plugin's changelog before updating.
+
+---
+
+## Removing Plugins
+
+To uninstall a plugin:
+
+1. Stop your server.
+2. Delete the plugin's `.jar` file.
+3. Remove the plugin's data folder if you no longer need its configuration or stored data.
+4. Start your server.
+
+> **Warning**
+>
+> Deleting a plugin's data folder may permanently remove its configuration and stored information.
+
+---
+
+## Best Practices
+
+We recommend:
+
+- Install plugins one at a time.
+- Restart the server after each installation.
+- Keep plugins updated.
+- Remove unused plugins.
+- Create backups before major plugin changes.
+
+---
+
+## Current Limitations
+
+At this time, HyCloud Hosting does **not** provide a one-click Plugin Installer through the control panel.
+
+Plugins must be installed manually using the File Manager or SFTP.
+
+A built-in plugin installation feature may be introduced in the future.
+
+---
+
+## Need Help?
+
+If you're unsure whether a plugin is compatible with your server or need assistance installing it, our support team is available through Discord and the Client Area.
